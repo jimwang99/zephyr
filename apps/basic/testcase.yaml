@@ -1,0 +1,14 @@
+# Copyright (c) 2023 Legrand North America, LLC.
+# SPDX-License-Identifier: Apache-2.0
+
+tests:
+  apps.basic:
+    tags: test_framework
+    integration_platforms:
+      - qemu_cortex_a53
+      - qemu_cortex_m3
+      - native_sim/native/64
+    platform_allow:
+      - qemu_cortex_a53
+      - qemu_cortex_m3
+      - native_sim/native/64
