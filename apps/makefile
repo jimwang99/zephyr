@@ -1,7 +1,7 @@
 
 .PHONY: build
 build:
-	west build -b qemu_cortex_a53 basic
+	west build -b qemu_cortex_m3 basic
 
 .PHONY: run
 run: build
@@ -9,7 +9,7 @@ run: build
 
 .PHONY: test
 test:
-	west twister -p qemu_cortex_a53 -T basic
+	west twister -p qemu_cortex_m3 -T basic
 
 .PHONY: clean
 clean:
